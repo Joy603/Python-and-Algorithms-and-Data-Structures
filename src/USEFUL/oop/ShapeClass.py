@@ -26,7 +26,7 @@ class Point(object):
 class Circle(Point):
     
     def __init__(self, radius, x=0, y=0):
-        super().__init__(x,y) # creates and initializes self.x and self.y
+        super(Circle,self).__init__(x,y) # creates and initializes self.x and self.y
         self.radius = radius
 	
     def edge_distance_from_origin(self):
